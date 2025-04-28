@@ -1,6 +1,6 @@
-# Barcode Decoder
+# Barcode Decoder 
 
-# Barcode Detection and Decoding System using YOLO 
+## Barcode Detection and Decoding System using YOLO 
 
 ## 📌 Project Overview
 
