@@ -1,6 +1,6 @@
 # Barcode Decoder
 
-# Barcode Detection and Decoding System using YOLO Barcode Decoder
+# Barcode Detection and Decoding System using YOLO 
 
 ## 📌 Project Overview
 
@@ -12,8 +12,8 @@ We use YOLOv8 (You Only Look Once) for barcode detection and Pyzbar library for 
 
 ## 📚 Project Structure
 
-- `notebooks/Train.ipynb` → Trains YOLOv8 on custom barcode dataset.
-- `notebooks/Test.ipynb` → Tests the trained model and decodes barcodes from test images.
+- `notebooks/Barcode_Decoder_Project_Model_Training.ipynb` → Trains YOLOv8 on custom barcode dataset.
+- `notebooks/Barcode_Decoder_Project_Model_Testing.ipynb` → Tests the trained model and decodes barcodes from test images.
 - `dataset/` → (Optional) Contains sample images used during training, validation, and testing.
 - `README.md` → This file.
 
@@ -32,7 +32,7 @@ We use YOLOv8 (You Only Look Once) for barcode detection and Pyzbar library for 
 
 ## 🖼️ Dataset
 
-- Custom barcode dataset created manually.
+- Custom barcode dataset created manually from large roboflow dataset
 - Divided into `train`, `valid`, and `test` folders.
 - Each folder contains:
   - `/images` (actual images)
@@ -42,15 +42,15 @@ We use YOLOv8 (You Only Look Once) for barcode detection and Pyzbar library for 
 
 ## 🚀 How to Run the Project
 
-1. Open the **Train.ipynb** notebook.
+1. Open the **Barcode_Decoder_Project_Model_Training.ipynb** notebook.
 2. Mount your Google Drive.
 3. Unzip dataset and train YOLOv8 model.
 4. Save the trained model (`best.pt` or `saved_model.pt`).
 
 Then:
 
-5. Open the **Test.ipynb** notebook.
-6. Upload your trained model weights.
+5. Open the **Barcode_Decoder_Project_Model_Testing.ipynb** notebook.
+6. Upload your trained model weights either `best.pt` or `saved_model.pt` but `best.pt` has best weights 
 7. Upload images for testing.
 8. Predict barcode regions, crop, and decode them automatically.
 
