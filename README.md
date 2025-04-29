@@ -59,7 +59,7 @@ Then:
 ## 📈 Model Performance
 
 - Model evaluated using mAP, Precision, Confusion Matrix and Recall metrics.
-- Metrics printed during validation step.
+- Metrics printed during validation step and their images stored in the runs
 
 ---
 
