@@ -71,3 +71,9 @@ Install the following packages:
 pip install ultralytics pyzbar opencv-python-headless
 apt-get update
 apt-get install -y libzbar0
+
+## 🙋 Author
+
+Keerthana Nehru
+Barcode Decoder Project  
+April 2025
