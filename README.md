@@ -72,6 +72,8 @@ pip install ultralytics pyzbar opencv-python-headless
 apt-get update
 apt-get install -y libzbar0
 
+
+
 ## 🙋 Author
 
 Keerthana Nehru
