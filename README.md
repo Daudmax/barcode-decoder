@@ -77,5 +77,5 @@ apt-get install -y libzbar0
 ## 🙋 Author
 
 Keerthana Nehru
-Barcode Decoder Project  
-April 2025
+- Barcode Decoder Project  
+- April 2025
