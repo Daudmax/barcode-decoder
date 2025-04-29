@@ -12,9 +12,9 @@ We use YOLOv8 (You Only Look Once) for barcode detection and Pyzbar library for 
 
 ## 📚 Project Structure
 
-- `notebooks/Barcode_Decoder_Project_Model_Training.ipynb` → Trains YOLOv8 on custom barcode dataset.
-- `notebooks/Barcode_Decoder_Project_Model_Testing.ipynb` → Tests the trained model and decodes barcodes from test images.
-- `dataset/` → (Optional) Contains sample images used during training, validation, and testing.
+- `Barcode_Decoder_Project_Model_Training.ipynb` → Trains YOLOv8 on custom barcode dataset.
+- `Barcode_Decoder_Project_Model_Testing.ipynb` → Tests the trained model and decodes barcodes from test images.
+- `dataset ->` "https://drive.google.com/drive/folders/1RoPo4aOoWh_ByNP-WMtlylC7FkpSdxHF?usp=sharing" -> new_dataset → Contains sample images used during training, validation, and testing.
 - `README.md` → This file.
 
 ---
